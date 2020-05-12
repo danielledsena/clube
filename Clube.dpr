@@ -20,7 +20,8 @@ uses
   UnitConsultaAtividades in 'UnitConsultaAtividades.pas' {FormConsultaAtividades},
   UnitConsultaMatriculas in 'UnitConsultaMatriculas.pas' {FormConsultaMatriculas},
   UnitBackup in 'UnitBackup.pas' {FormBackup},
-  UnitRestaura in 'UnitRestaura.pas' {FormRestaura};
+  UnitRestaura in 'UnitRestaura.pas' {FormRestaura},
+  UnitRelatorios in 'UnitRelatorios.pas' {Relatorios: TDataModule};
 
 {$R *.res}
 
@@ -43,5 +44,6 @@ begin
   Application.CreateForm(TFormConsultaMatriculas, FormConsultaMatriculas);
   Application.CreateForm(TFormBackup, FormBackup);
   Application.CreateForm(TFormRestaura, FormRestaura);
+  Application.CreateForm(TRelatorios, Relatorios);
   Application.Run;
 end.

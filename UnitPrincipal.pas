@@ -91,6 +91,12 @@ type
     procedure PopupMatriculasCadastroClick(Sender: TObject);
     procedure PopupMatriculasExclusaoClick(Sender: TObject);
     procedure PopupMatriculasConsultaClick(Sender: TObject);
+    procedure RelatorioSociosClick(Sender: TObject);
+    procedure PopupRelatoriosSociosClick(Sender: TObject);
+    procedure RelatoriosAtividadesClick(Sender: TObject);
+    procedure PopupRelatoriosAtividadesClick(Sender: TObject);
+    procedure RelatoriosMatriculasClick(Sender: TObject);
+    procedure PopupRelatoriosMatriculasClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -106,7 +112,7 @@ uses UnitSobre, UnitCadastroSocios, UnitCadastraAtividades,
   UnitCadastraMatriculas, UnitAlteraClientes, UnitAlteraAtividades,
   UnitExlusaoSocios, UnitExclusaoAtividades, UnitExclusaoMatriculas,
   UnitConsultaSocios, UnitConsultaAtividades, UnitConsultaMatriculas,
-  UnitBackup, UnitRestaura;
+  UnitBackup, UnitRestaura, UnitRelatorios;
 
 {$R *.dfm}
 
@@ -248,6 +254,42 @@ end;
 procedure TFormPrincipal.PopupMatriculasConsultaClick(Sender: TObject);
 begin
   FormConsultaMatriculas.ShowModal;
+end;
+
+procedure TFormPrincipal.RelatorioSociosClick(Sender: TObject);
+begin
+  Relatorios.RvClube.SelectReport('RelatSocios',False);
+  Relatorios.RvClube.Execute;
+end;
+
+procedure TFormPrincipal.PopupRelatoriosSociosClick(Sender: TObject);
+begin
+  Relatorios.RvClube.SelectReport('RelatSocios',False);
+  Relatorios.RvClube.Execute;
+end;
+
+procedure TFormPrincipal.RelatoriosAtividadesClick(Sender: TObject);
+begin
+  Relatorios.RvClube.SelectReport('RelatAtividades',False);
+  Relatorios.RvClube.Execute;
+end;
+
+procedure TFormPrincipal.PopupRelatoriosAtividadesClick(Sender: TObject);
+begin
+  Relatorios.RvClube.SelectReport('RelatAtividades',False);
+  Relatorios.RvClube.Execute;
+end;
+
+procedure TFormPrincipal.RelatoriosMatriculasClick(Sender: TObject);
+begin
+  Relatorios.RvClube.SelectReport('RelatMatrículas',False);
+  Relatorios.RvClube.Execute;
+end;
+
+procedure TFormPrincipal.PopupRelatoriosMatriculasClick(Sender: TObject);
+begin
+  Relatorios.RvClube.SelectReport('RelatMatrículas',False);
+  Relatorios.RvClube.Execute;
 end;
 
 end.

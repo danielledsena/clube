@@ -2,13 +2,14 @@ object Dados: TDados
   OldCreateOrder = False
   Left = 278
   Top = 235
-  Height = 373
+  Height = 297
   Width = 248
   object ADOConnectionClube: TADOConnection
     Connected = True
     ConnectionString = 
       'Provider=SQLOLEDB.1;Password=123;Persist Security Info=True;User' +
       ' ID=sa;Initial Catalog=Clube;Data Source=HP-PC'
+    LoginPrompt = False
     Provider = 'SQLOLEDB.1'
     Left = 96
     Top = 8

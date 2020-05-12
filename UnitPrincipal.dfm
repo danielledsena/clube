@@ -492,12 +492,15 @@ object FormPrincipal: TFormPrincipal
       Caption = '&Relat'#243'rios'
       object RelatorioSocios: TMenuItem
         Caption = '&S'#243'cios...'
+        OnClick = RelatorioSociosClick
       end
       object RelatoriosAtividades: TMenuItem
         Caption = '&Atividades'
+        OnClick = RelatoriosAtividadesClick
       end
       object RelatoriosMatriculas: TMenuItem
         Caption = '&Matr'#237'culas'
+        OnClick = RelatoriosMatriculasClick
       end
     end
     object MenuHelp: TMenuItem
@@ -588,12 +591,15 @@ object FormPrincipal: TFormPrincipal
       Caption = '&Relat'#243'rios'
       object PopupRelatoriosSocios: TMenuItem
         Caption = '&S'#243'cios...'
+        OnClick = PopupRelatoriosSociosClick
       end
       object PopupRelatoriosAtividades: TMenuItem
         Caption = '&Atividades'
+        OnClick = PopupRelatoriosAtividadesClick
       end
       object PopupRelatoriosMatriculas: TMenuItem
         Caption = '&Matr'#237'culas'
+        OnClick = PopupRelatoriosMatriculasClick
       end
     end
     object PopupHelp: TMenuItem
